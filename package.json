@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sididev.github.io/job-listings/",
+  "homepage": "https://sididev.github.io/remotely-jobs/",
   "dependencies": {
     "axios": "^0.19.2",
     "cra-template": "1.0.3",
