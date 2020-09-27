@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/remotely-jobs/static/css/main.b6080b45.chunk.css",
-    "main.js": "/remotely-jobs/static/js/main.ec8ba0cc.chunk.js",
-    "main.js.map": "/remotely-jobs/static/js/main.ec8ba0cc.chunk.js.map",
+    "main.css": "/remotely-jobs/static/css/main.4978ec33.chunk.css",
+    "main.js": "/remotely-jobs/static/js/main.ee4fb15f.chunk.js",
+    "main.js.map": "/remotely-jobs/static/js/main.ee4fb15f.chunk.js.map",
     "runtime-main.js": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js",
     "runtime-main.js.map": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js.map",
     "static/js/2.a5ced70c.chunk.js": "/remotely-jobs/static/js/2.a5ced70c.chunk.js",
     "static/js/2.a5ced70c.chunk.js.map": "/remotely-jobs/static/js/2.a5ced70c.chunk.js.map",
     "index.html": "/remotely-jobs/index.html",
-    "precache-manifest.d7231b72ee567c804d93d8b958b5f52f.js": "/remotely-jobs/precache-manifest.d7231b72ee567c804d93d8b958b5f52f.js",
+    "precache-manifest.a2b21dade1e3d6990f7999714ec58f94.js": "/remotely-jobs/precache-manifest.a2b21dade1e3d6990f7999714ec58f94.js",
     "service-worker.js": "/remotely-jobs/service-worker.js",
-    "static/css/main.b6080b45.chunk.css.map": "/remotely-jobs/static/css/main.b6080b45.chunk.css.map",
+    "static/css/main.4978ec33.chunk.css.map": "/remotely-jobs/static/css/main.4978ec33.chunk.css.map",
     "static/js/2.a5ced70c.chunk.js.LICENSE.txt": "/remotely-jobs/static/js/2.a5ced70c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bbaac2b6.js",
     "static/js/2.a5ced70c.chunk.js",
-    "static/css/main.b6080b45.chunk.css",
-    "static/js/main.ec8ba0cc.chunk.js"
+    "static/css/main.4978ec33.chunk.css",
+    "static/js/main.ee4fb15f.chunk.js"
   ]
 }
