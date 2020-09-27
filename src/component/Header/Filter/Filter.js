@@ -63,7 +63,7 @@ const Filter = (props) => {
 
     return (
         <div className="mt-5 w-full relative">
-            <div className="mx-5 sm:overflow-visible overflow-x-scroll h-12 sm:h-auto sm:mx-12 flex space-x-4 relative filter-container">
+            <div className="mx-5 sm:overflow-x-visible overflow-x-scroll h-12 sm:h-auto sm:mx-12 flex space-x-4 relative filter-container">
                 <div className="relative">
                     <select className="text-gray-700 bg-gray-300 rounded appearance-none py-1 px-5 border-none focus:outline-none select cursor-pointer" name="location" onChange={(e) => {
                         setLocation(e.target.value);
@@ -109,7 +109,7 @@ const Filter = (props) => {
                     </div>
                 </div>
                 <div className="relative">
-                    <button className="border-none focus:outline-none text-gray-700 bg-gray-300 py-1 px-5 w-32 flex justify-between items-center rounded" onClick={toggleOpen}>
+                    <button className="border-none focus:outline-none text-gray-700 bg-gray-300 py-1 px-5 w-40 flex justify-between items-center rounded" onClick={toggleOpen}>
                         Job Salary
                         <svg className="fill-current h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
                     </button>

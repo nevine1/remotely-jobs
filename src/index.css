@@ -38,6 +38,9 @@ code {
 }
 
 .filter-container::-webkit-scrollbar-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: #a1a1a1;
 }
 
@@ -45,7 +48,6 @@ code {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 15px;
   height: 15px;
   border-radius: 50%;
   background: #319795;
@@ -54,6 +56,7 @@ code {
 
 .salary-range::-webkit-slider-thumb:hover {
   box-shadow: 0 0 0 3px #319795b4;
+  height: 15px;
 }
 
 .job-container {
