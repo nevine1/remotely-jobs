@@ -1,3 +1,12 @@
+export const get_api_url = (apiUrl) => {
+    const action = {
+        type: 'GET API URL',
+        apiUrl
+    }
+
+    return action;
+}
+
 export const pass_data = (JobsData) => {
     const action = {
         type: 'SEND DATA',
