@@ -60,7 +60,7 @@ const Filter = (props) => {
 
     return (
         <div className="mt-5 w-full relative">
-            <div className="mx-5 sm:overflow-x-visible overflow-x-scroll h-12 sm:h-auto sm:mx-12 flex space-x-4 relative filter-container">
+            <div className="mx-5 sm:overflow-x-visible overflow-x-scroll h-12 w-full sm:h-auto sm:mx-12 flex space-x-4 relative filter-container">
                 <div className="relative">
                     <select className="text-gray-700 bg-gray-300 rounded appearance-none py-1 px-5 border-none focus:outline-none select cursor-pointer" name="jobType" onChange={(e) => {
                         setJobType(e.target.value);
