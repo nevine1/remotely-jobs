@@ -7,6 +7,23 @@ export const get_api_url = (apiUrl) => {
     return action;
 }
 
+export const make_request = () => {
+    const action = {
+        type: 'MAKE REQUEST',
+    }
+
+    return action;
+}
+
+export const faild_request = (err) => {
+    const action = {
+        type: 'FAILD REQUEST',
+        err
+    }
+
+    return action;
+}
+
 export const pass_data = (JobsData) => {
     const action = {
         type: 'SEND DATA',

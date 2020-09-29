@@ -69,3 +69,30 @@ code {
   border-right: none;
   border-left: solid 4px #319795;
 }
+
+.loading {
+  border: solid 3px #f1f1f1;
+  border-right-color: #319795;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .jobs-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .jobs-container {
+    width: 400px;
+  }
+}

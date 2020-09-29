@@ -60,15 +60,16 @@ const Filter = (props) => {
 
     return (
         <div className="mt-5 w-full relative">
-            <div className="mx-5 sm:overflow-x-visible overflow-x-scroll h-12 w-full sm:h-auto sm:mx-12 flex space-x-4 relative filter-container">
+            <div className="mx-5 sm:overflow-x-visible overflow-x-scroll h-12 sm:h-auto sm:mx-12 flex space-x-4 relative filter-container">
                 <div className="relative">
                     <select className="text-gray-700 bg-gray-300 rounded appearance-none py-1 px-5 border-none focus:outline-none select cursor-pointer" name="jobType" onChange={(e) => {
                         setJobType(e.target.value);
                     }}>
-                        <option className="hover:bg-gray-300" value="">Job Type</option>
-                        <option className="hover:bg-gray-300" value="Full-time">Full-time</option>
-                        <option className="hover:bg-gray-300" value="Part-time">Part-time</option>
-                        <option className="hover:bg-gray-300" value="Internship">Internship</option>
+                        <option className="hover:bg-gray-300" value="software-dev">Software Development</option>
+                        <option className="hover:bg-gray-300" value="customer-support">Customer Service</option>
+                        <option className="hover:bg-gray-300" value="design">Design</option>
+                        <option className="hover:bg-gray-300" value="marketing">Marketing</option>
+                        <option className="hover:bg-gray-300" value="devops">DevOps / Sysadmin</option>
                     </select>
                     <div className="absolute top-2 right-1 text-gray-600 pointer-events-none">
                         <svg className="fill-current h-4 w-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -94,7 +95,7 @@ const Filter = (props) => {
                     </button>
                 </div>
                 <div>
-                    <button className="border-none focus:outline-none bg-teal-500 hover:bg-teal-600 text-white py-1 px-5 rounded font-bold" onClick={applyFilter}>
+                    <button className="mr-2 border-none focus:outline-none bg-teal-500 hover:bg-teal-600 text-white py-1 px-5 rounded font-bold" onClick={applyFilter}>
                         Apply
                     </button>
                 </div>
