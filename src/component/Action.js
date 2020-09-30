@@ -1,7 +1,7 @@
-export const get_api_url = (apiUrl) => {
+export const get_api_url = (getApiUrl) => {
     const action = {
         type: 'GET API URL',
-        apiUrl
+        getApiUrl
     }
 
     return action;

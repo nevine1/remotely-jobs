@@ -13,7 +13,7 @@ const Content = (props) => {
         setLoadingBoolean(props.state.makeReq)
         setErrorMessage(props.state.faildReq.details)
         
-    })
+    },[props.state.makeReq])
 
     return (
         <main className="mt-8 mx-5 sm:mx-12">

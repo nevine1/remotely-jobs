@@ -1,37 +1,34 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { pass_data , make_request , faild_request } from '../Action';
 import { connect } from 'react-redux';
 import axios from 'axios';
-import noImage from '../images/no-logo.png'
-import Loading from '../Loading/Loading';
 
+const Jobs = (props) => {
 
-class Jobs extends Component {
-
-    state = {
+    // state = {
         // Init empty array
-        jobsDataArr: []
-    }
+        const [jobsDataArr , setJobsDataArr] = useState([])
 
-    componentDidMount() {
+    //     jobsDataArr: [],
+    //     apiUrl: this.props.state.getApiUrl
+    // }
+
+    useEffect(() => {
         // run this function
-        this.props.make_request();
+        props.make_request();
         // get request
-        axios.get(this.props.state.getApiUrl).then(res => {
-            const jobsData = this.state.jobsDataArr = res.data.jobs;
+        axios.get(props.state.getApiUrl).then(res => {
             // Update the state
-            this.setState({
-                jobsData
-            })
+            setJobsDataArr(res.data.jobs)
             // Pass the data
-            this.props.pass_data(res.data);
+            props.pass_data(res.data);
         }).catch(err => {
             // Pass the error message
-            this.props.faild_request(err.message)
+            props.faild_request(err.message)
         })
-    }
+    },[props.state.getApiUrl])
 
-    addProps = (e) => {
+    const addProps = (e) => {
 
         // Get job-container elements
         const jobContainer = document.querySelectorAll('.job-container')
@@ -51,20 +48,20 @@ class Jobs extends Component {
         jobContainer[e].classList.add('job-container-js');
     }
 
-    render() {
-        // const jobsData = props.state.passData;
     
-        const job = this.state.jobsDataArr.map((items,index) => {
+        const job = jobsDataArr.map((items,index) => {
         
             return (
-                <div className="mt-4 hover:shadow-md job-container" key={index} onClick={() => this.addProps(index)}>
+                <div className="mt-4 hover:shadow-md job-container" key={index} onClick={() => addProps(index)}>
                     <div className="p-3">
                         <div className="block sm:flex space-x-0 sm:space-x-2">
+                            {items.company_logo_url ?
                             <div className="w-20">
                                 <div className="w-16 h-16 md:w-20 md:h-20 border border-gray-300 rounded-full job-logo">
-                                    <img src={items.company_logo_url ? items.company_logo_url : noImage} className="w-16 h-16 md:w-20 md:h-20 rounded-full"/>
+                                    <img src={items.company_logo_url} className="w-16 h-16 md:w-20 md:h-20 rounded-full"/>
                                 </div>
                             </div>
+                             : ''}
                             <div className="mt-1 ml-3 sm:ml-0 sm:mt-0">
                                 <span className="text-teal-600 font-bold capitalize">{items.company_name}</span>
                                 <p className="text-lg font-bold capitalize">{items.title}</p>
@@ -93,14 +90,13 @@ class Jobs extends Component {
                 </div>
             )
         })
-    
-        return (
-            <>
-                { this.state.jobsDataArr ? job : '' }
-            </>
-        )
 
-    }
+
+    return (
+        <>
+            { jobsDataArr ? job : '' }
+        </>
+    )
 
 }
 

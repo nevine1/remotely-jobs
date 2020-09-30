@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
-import { apply_Search , pass_data } from '../../Action';
+import { get_api_url } from '../../Action';
 import { connect } from 'react-redux';
-import jobsData from '../../Content/jobsData.json';
 
 const Form = (props) => {
-    
-    // Init empty object
-    const searchValuesObj = {}
+
+    // Init empty search state
+    const [search,setSearch] = useState('')
+
+    // Init empty company state
+    const [company,setCompany] = useState('')
     
     // On Focus
     const formShadwo = (e) => {
@@ -33,23 +35,17 @@ const Form = (props) => {
 
     // On click
     const applySearch = () => {
-        // Init empty object
-        const newSearchValuesObj = {};
-        // Init empty array
-        const itemsArray = [];
+
         // Check if the object is not empty
-        if (searchValuesObj) {
-            for (let obj in searchValuesObj) {
-                // Create a propreties from newSearchValuesObj
-                newSearchValuesObj[obj] = searchValuesObj[obj];
-                props.state.passData.map(items => {
-                    if (items[obj].toLowerCase().includes(searchValuesObj[obj].toLowerCase())) {
-                        itemsArray.push(items)
-                        props.pass_data(itemsArray)
-                    }
-                })
-            }
+        if (search || company) {
+            props.get_api_url(`https://cors-anywhere.herokuapp.com/https://remotive.io/api/remote-jobs${search}${company}`)
         }
+        setSearch('')
+        setCompany('')
+        document.querySelectorAll('.formInput')
+        .forEach(inputEl => {
+            inputEl.value = ''
+        })
     }
     
     return (
@@ -57,14 +53,14 @@ const Form = (props) => {
             <div className="mx-5 sm:mx-12 md:space-x-3 md:flex">
                 <div className="inline-block p-2 border border-gray-500 mt-2 form-one" style={{borderRadius: '7px'}}>
                     <FaSearch className="float-left text-gray-600 mt-1 mr-2"/>
-                    <input type="text" placeholder="job title" className="border-none focus:outline-none" name="requirement" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
-                        searchValuesObj[e.target.name] = e.target.value
+                    <input type="text" placeholder="job title" className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
+                        setSearch(`?search=${e.target.value.toLowerCase()}`)
                     }}/>
                 </div>
                 <div className="inline-block p-2 border border-gray-500 mt-2 form-two" style={{borderRadius: '7px'}}>
                     <FaMapMarkerAlt className="float-left text-gray-600 mt-1 mr-2"/>
-                    <input type="text" placeholder="City or Country" className="border-none focus:outline-none" name="location" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
-                        searchValuesObj[e.target.name] = e.target.value
+                    <input type="text" placeholder="City or Country"  className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
+                        setCompany(`?company_name=${e.target.value.toLowerCase()}`)
                     }}/>
                 </div>
                 <div className="mt-2 form-three">
@@ -79,4 +75,4 @@ export default connect(state => {
     return {
         state
     }
-}, { apply_Search , pass_data } )(Form);
+}, { get_api_url } )(Form);
