@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/remotely-jobs/static/css/main.e55b1ed7.chunk.css",
-    "main.js": "/remotely-jobs/static/js/main.8515ee26.chunk.js",
-    "main.js.map": "/remotely-jobs/static/js/main.8515ee26.chunk.js.map",
+    "main.css": "/remotely-jobs/static/css/main.e02e7280.chunk.css",
+    "main.js": "/remotely-jobs/static/js/main.135f6abd.chunk.js",
+    "main.js.map": "/remotely-jobs/static/js/main.135f6abd.chunk.js.map",
     "runtime-main.js": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js",
     "runtime-main.js.map": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js.map",
-    "static/js/2.e310dd4c.chunk.js": "/remotely-jobs/static/js/2.e310dd4c.chunk.js",
-    "static/js/2.e310dd4c.chunk.js.map": "/remotely-jobs/static/js/2.e310dd4c.chunk.js.map",
+    "static/js/2.2bcce586.chunk.js": "/remotely-jobs/static/js/2.2bcce586.chunk.js",
+    "static/js/2.2bcce586.chunk.js.map": "/remotely-jobs/static/js/2.2bcce586.chunk.js.map",
     "index.html": "/remotely-jobs/index.html",
-    "precache-manifest.5960a661cc52188d639d61f6cae8ce5c.js": "/remotely-jobs/precache-manifest.5960a661cc52188d639d61f6cae8ce5c.js",
+    "precache-manifest.3da0e7c17d7f9e9407a12304cb4334e0.js": "/remotely-jobs/precache-manifest.3da0e7c17d7f9e9407a12304cb4334e0.js",
     "service-worker.js": "/remotely-jobs/service-worker.js",
-    "static/css/main.e55b1ed7.chunk.css.map": "/remotely-jobs/static/css/main.e55b1ed7.chunk.css.map",
-    "static/js/2.e310dd4c.chunk.js.LICENSE.txt": "/remotely-jobs/static/js/2.e310dd4c.chunk.js.LICENSE.txt",
-    "static/media/no-logo.png": "/remotely-jobs/static/media/no-logo.dd9b315d.png"
+    "static/css/main.e02e7280.chunk.css.map": "/remotely-jobs/static/css/main.e02e7280.chunk.css.map",
+    "static/js/2.2bcce586.chunk.js.LICENSE.txt": "/remotely-jobs/static/js/2.2bcce586.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bbaac2b6.js",
-    "static/js/2.e310dd4c.chunk.js",
-    "static/css/main.e55b1ed7.chunk.css",
-    "static/js/main.8515ee26.chunk.js"
+    "static/js/2.2bcce586.chunk.js",
+    "static/css/main.e02e7280.chunk.css",
+    "static/js/main.135f6abd.chunk.js"
   ]
 }
