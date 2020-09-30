@@ -21,18 +21,7 @@ const Reducer = (state = initState, action) => {
         return {...state , getApiUrl: action.getApiUrl , passData: []};
         
     } else if (action.type === 'SEND DATA') {
-        return {...state,  passData: action.JobsData , makeReq: false , passData: [] };
-
-    }
-    else if (action.type === 'APPLY FILTER') {
-        filterValues = action.filterValues;
-        state.filterValues = filterValues
-        return state;
-        
-    } else if (action.type === 'APPLY SEARCH') {
-        searchValues = action.searchValues;
-        state.searchValues = searchValues;
-        return state;
+        return {...state,  passData: action.JobsData , makeReq: false };
 
     } else {
         return state;

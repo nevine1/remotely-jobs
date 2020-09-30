@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
-import { FaMapMarkerAlt } from 'react-icons/fa';
+import { FaBriefcase } from 'react-icons/fa';
 import { get_api_url } from '../../Action';
 import { connect } from 'react-redux';
 
@@ -51,20 +51,20 @@ const Form = (props) => {
     return (
         <div className="mt-7">
             <div className="mx-5 sm:mx-12 md:space-x-3 md:flex">
-                <div className="inline-block p-2 border border-gray-500 mt-2 form-one" style={{borderRadius: '7px'}}>
+                <div className="w-full sm:w-auto block sm:inline-block p-2 border border-gray-500 mt-2 form-one" style={{borderRadius: '7px'}}>
                     <FaSearch className="float-left text-gray-600 mt-1 mr-2"/>
                     <input type="text" placeholder="job title" className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
                         setSearch(`?search=${e.target.value.toLowerCase()}`)
                     }}/>
                 </div>
-                <div className="inline-block p-2 border border-gray-500 mt-2 form-two" style={{borderRadius: '7px'}}>
-                    <FaMapMarkerAlt className="float-left text-gray-600 mt-1 mr-2"/>
-                    <input type="text" placeholder="City or Country"  className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
+                <div className="w-full sm:w-auto block sm:inline-block p-2 border border-gray-500 mt-2 sm:ml-2" style={{borderRadius: '7px'}}>
+                    <FaBriefcase className="float-left text-gray-600 mt-1 mr-2"/>
+                    <input type="text" placeholder="Company name"  className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
                         setCompany(`?company_name=${e.target.value.toLowerCase()}`)
                     }}/>
                 </div>
                 <div className="mt-2 form-three">
-                    <button className="text-white bg-teal-500 font-bold py-2 px-6 focus:outline-none border-none hover:bg-teal-600 font-bold" style={{borderRadius: '7px'}} onClick={applySearch}>Search</button>
+                    <button className="w-full sm:w-auto text-white bg-teal-500 font-bold py-2 px-6 focus:outline-none border-none hover:bg-teal-600 font-bold" style={{borderRadius: '7px'}} onClick={applySearch}>Search</button>
                 </div>
             </div>
         </div>

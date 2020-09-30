@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { apply_Filter } from '../../Action';
+import { } from '../../Action';
 
 const Filter = (props) => {
     
@@ -38,23 +38,6 @@ const Filter = (props) => {
     const filterValues = {}
 
     const applyFilter = () => {
-
-        // Create properties from empty object
-        optsValueObj.jobType = jobType;
-        optsValueObj.experienceLevel = experienceLevel;
-        optsValueObj.Salary = Salary;
-
-        // Check if the object is not empty
-        if (optsValueObj) {
-            for (let obj in optsValueObj) {
-                // Check if values of object is not empty
-                if (optsValueObj[obj] !== '') {
-                    // Create properties from empty object
-                    filterValues[obj] = optsValueObj[obj];
-                    props.apply_Filter(filterValues)
-                }
-            }
-        }
 
     }
 
@@ -119,4 +102,4 @@ export default connect(state => {
     return {
         state
     }
-} , {apply_Filter})(Filter);
+} , null)(Filter);

@@ -28,9 +28,12 @@ const Navbar = () => {
                     <div className="hidden sm:block sm:ml-12 fixed z-50 top-0 left-0 right-0 bg-white w-full h-full sm:w-auto sm:h-auto sm:relative menu-container">
                         <div className="text-right mr-8 sm:hidden">
                             <div className="inline-block relative h-12">
-                                <div className="inline-block cursor-pointer mr-3" onClick={hideMenu}>
-                                    <span className="block h-5 mt-1 bg-gray-600 transform rotate-45 absolute" style={{width: '2px'}}></span>
-                                    <span className="block h-5 mt-1 bg-gray-600 transform -rotate-45 absolute" style={{width: '2px'}}></span>
+                                <div className="float-right mt-4" onClick={hideMenu}>
+                                    <div className="flex justify-center w-6 h-6 cursor-pointer">
+                                        <span className="block h-5 mt-1 bg-gray-600 transform rotate-45 absolute" style={{width: '2px'}}></span>
+                                        <span className="block h-5 mt-1 bg-gray-600 transform -rotate-45 absolute" style={{width: '2px'}}></span>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -42,7 +45,7 @@ const Navbar = () => {
                     </div>
                     <div className="float-right">
                         <div className="flex space-x-4 sm:space-x-0">
-                            <li className="list-none font-bold text-gray-700 sm:text-teal-600"><a href="#">Sign in</a></li>
+                            <li className="list-none font-bold py-px px-3 sm:px-0 sm:py-0 text-white sm:text-teal-600 bg-teal-500 hover:bg-teal-600 sm:bg-transparent rounded"><a href="#">Sign in</a></li>
                             <div className="inline-block cursor-pointer sm:hidden" onClick={showMenu}>
                                 <span className="w-7 mt-1 bg-gray-600 block" style={{height: '3px'}}></span>
                                 <span className="w-7 mt-1 bg-gray-600 block" style={{height: '3px'}}></span>

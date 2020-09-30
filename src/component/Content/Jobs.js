@@ -5,16 +5,13 @@ import axios from 'axios';
 
 const Jobs = (props) => {
 
-    // state = {
         // Init empty array
         const [jobsDataArr , setJobsDataArr] = useState([])
 
-    //     jobsDataArr: [],
-    //     apiUrl: this.props.state.getApiUrl
-    // }
 
     useEffect(() => {
-        // run this function
+        setJobsDataArr([])
+        // make a request
         props.make_request();
         // get request
         axios.get(props.state.getApiUrl).then(res => {
@@ -72,7 +69,7 @@ const Jobs = (props) => {
                             </div>
                         </div>
                         <div className="mt-3 border-t-2 border-gray-300">
-                            <button className="border border-teal-600 font-bold text-gray-600 hover:bg-teal-600 hover:text-white py-1 px-5 rounded mt-2 ml-2">
+                            <button className="border border-teal-600 font-bold text-gray-600 hover:bg-teal-600 hover:text-white py-1 px-5 rounded mt-2 ml-2 focus:outline-none">
                                 View details
                             </button>
                             {items.salary ? <li className="list-none text-gray-600 mt-2 ml-2 py-1 px-1 capitalize">salary <span className="text-black rounded bg-gray-200 py-1 px-3">${items.salary}</span></li> : ''}
