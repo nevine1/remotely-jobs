@@ -14,7 +14,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="overflow-hidden">
+        <nav className="overflow-hidden relative z-20">
             <div className="mx-8 sm:mx-12 mt-4">
                 <div className="inline-block text-teal-600 text-4xl float-left">
                     <a href="/" className="no-underline">

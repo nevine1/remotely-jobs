@@ -4,15 +4,15 @@ const initState = {
     faildReq: {
         details: '',
     },
-    passData: []
+    passData: [],
+    jobDetails: '',
+    jobUrl: ''
 }
 
 const Reducer = (state = initState, action) => {
-    let searchValues = null;
-    let filterValues = null;
 
     if (action.type === 'MAKE REQUEST') {
-        return {...state , makeReq: true };
+        return {...state , makeReq: true , faildReq:{ details: '' } , jobDetails: '' , jobUrl: ''};
 
     } else if (action.type === 'FAILD REQUEST') {
         return {...state , faildReq: {details: action.err}, makeReq: false};
@@ -22,6 +22,9 @@ const Reducer = (state = initState, action) => {
         
     } else if (action.type === 'SEND DATA') {
         return {...state,  passData: action.JobsData , makeReq: false };
+
+    } else if (action.type === 'SHOW DETAILS') {
+        return {...state , jobDetails: action.jobDetails , jobUrl: action.jobUrl }
 
     } else {
         return state;

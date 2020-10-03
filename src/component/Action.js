@@ -32,3 +32,13 @@ export const pass_data = (JobsData) => {
 
     return action;
 }
+
+export const show_details = (jobDetails,jobUrl) => {
+    const action = {
+        type: 'SHOW DETAILS',
+        jobDetails,
+        jobUrl
+    }
+
+    return action;
+}

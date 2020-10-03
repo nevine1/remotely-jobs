@@ -96,3 +96,18 @@ code {
     width: 400px;
   }
 }
+
+.window::-webkit-scrollbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f1f1f1;
+  width: 10px;
+}
+
+.window::-webkit-scrollbar-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: rgb(202, 202, 202);
+}

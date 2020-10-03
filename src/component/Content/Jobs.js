@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { pass_data , make_request , faild_request } from '../Action';
+import { pass_data , make_request , faild_request , show_details } from '../Action';
 import { connect } from 'react-redux';
 import axios from 'axios';
 
@@ -49,7 +49,10 @@ const Jobs = (props) => {
         const job = jobsDataArr.map((items,index) => {
         
             return (
-                <div className="mt-4 hover:shadow-md job-container" key={index} onClick={() => addProps(index)}>
+                <div className="mt-4 hover:shadow-md job-container" key={index} onClick={() => {
+                    addProps(index)
+                    props.show_details(jobsDataArr[index].description,jobsDataArr[index].url)
+                    }}>
                     <div className="p-3">
                         <div className="block sm:flex space-x-0 sm:space-x-2">
                             {items.company_logo_url ?
@@ -69,7 +72,7 @@ const Jobs = (props) => {
                             </div>
                         </div>
                         <div className="mt-3 border-t-2 border-gray-300">
-                            <button className="border border-teal-600 font-bold text-gray-600 hover:bg-teal-600 hover:text-white py-1 px-5 rounded mt-2 ml-2 focus:outline-none">
+                            <button className="border border-teal-600 font-bold text-gray-600 hover:bg-teal-600 hover:text-white py-1 px-5 rounded mt-2 ml-2 focus:outline-none" onClick={() => props.show_details(jobsDataArr[index].description,jobsDataArr[index].url)}>
                                 View details
                             </button>
                             {items.salary ? <li className="list-none text-gray-600 mt-2 ml-2 py-1 px-1 capitalize">salary <span className="text-black rounded bg-gray-200 py-1 px-3">${items.salary}</span></li> : ''}
@@ -98,8 +101,15 @@ const Jobs = (props) => {
 }
 
 
+const mapPropsToDispatch = {
+    pass_data,
+    make_request,
+    faild_request,
+    show_details
+}
+
 export default connect(state => {
     return {
         state
     }
-},{ pass_data , make_request , faild_request}) (Jobs);
+},mapPropsToDispatch) (Jobs);

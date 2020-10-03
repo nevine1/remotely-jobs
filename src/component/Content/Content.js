@@ -27,7 +27,7 @@ const Content = (props) => {
     return (
         <main className="mt-8 mx-5 sm:mx-12">
             {jobCount['job-count'] ? <p className="font-bold text-gray-700 text-lg">{jobCount['job-count']} jobs available</p> : ''}
-            <div className="block md:flex">
+            <div className="block md:flex justify-between">
                 <div className="jobs-container">
                 <Jobs />
                 </div>
