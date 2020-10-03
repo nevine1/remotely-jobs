@@ -41,7 +41,7 @@ const Content_view = (props) => {
                     <p className="my-4 text-gray-600 text-lg leading-relaxed job-details-container">
                     </p>
                   </div>
-                  <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b block md:hidden">
+                  <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
                     <button
                       className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1"
                       type="button"
