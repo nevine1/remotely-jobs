@@ -1,0 +1,20 @@
+ The new features that will be available soon :
+
+    -Login Form
+    
+    -new features in home page for the registered users
+
+    -Adding jobs section
+
+    -Edit and delete job section
+
+    -Replace the Remotive site api with our api
+    
+    -Complete the filter
+
+
+Project developers:
+
+    -Sidi is a front end developer
+
+    -Mouhamed is a back end developer
