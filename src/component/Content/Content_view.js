@@ -24,18 +24,20 @@ const Content_view = (props) => {
             <div className={`overflow-x-hidden overflow-y-auto outline-none focus:outline-none fixed flex justify-center top-0 left-0 right-0 md:relative z-50 h-full bg-white window ${props.state.jobDetails ? 'block' : 'hidden'}`}>
               <div className="relative h-full md:w-auto mt-1 md:mx-auto md:max-w-sm">
                 <div className="border-0 md:rounded-lg md:shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none md:border-2 md:border-gray-400 md:rounded h-full w-full md:w-auto md:h-auto">
-                  <div className="pb-3 flex items-start justify-between p-5 border-b border-solid border-gray-300 rounded-t">
-                    <h3 className="text-xl font-semibold">
-                      Job Details
-                    </h3>
-                    <button
-                      className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none block md:hidden"
-                      onClick={closeWindow}
-                      >
-                      <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                        ×
-                      </span>
-                    </button>
+                  <div className="px-4 border-b border-solid border-gray-300 rounded-t">
+                    <div className="flex items-start justify-between">
+                      <h3 className="text-xl font-semibold">
+                        Job Details
+                      </h3>
+                      <button
+                        className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none block md:hidden"
+                        onClick={closeWindow}
+                        >
+                        <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                          ×
+                        </span>
+                      </button>
+                    </div>
                   </div>
                   <div className="relative p-6 flex-auto">
                     <p className="my-4 text-gray-600 text-lg leading-relaxed job-details-container">
