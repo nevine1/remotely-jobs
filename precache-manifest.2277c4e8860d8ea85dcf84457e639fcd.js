@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a477fc0f31ea403d52a51524a12e8865",
+    "revision": "b26f9a3766badddeac7c728a83fb1bf1",
     "url": "/remotely-jobs/index.html"
   },
   {
-    "revision": "6ded415ccbab42f4f604",
+    "revision": "aed21eb255a8059be59d",
     "url": "/remotely-jobs/static/css/main.18054f87.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/remotely-jobs/static/js/2.2bcce586.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6ded415ccbab42f4f604",
-    "url": "/remotely-jobs/static/js/main.dc631861.chunk.js"
+    "revision": "aed21eb255a8059be59d",
+    "url": "/remotely-jobs/static/js/main.a969a168.chunk.js"
   },
   {
     "revision": "b41b5a0bec87eb53faec",

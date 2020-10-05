@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/remotely-jobs/static/css/main.18054f87.chunk.css",
-    "main.js": "/remotely-jobs/static/js/main.dc631861.chunk.js",
-    "main.js.map": "/remotely-jobs/static/js/main.dc631861.chunk.js.map",
+    "main.js": "/remotely-jobs/static/js/main.a969a168.chunk.js",
+    "main.js.map": "/remotely-jobs/static/js/main.a969a168.chunk.js.map",
     "runtime-main.js": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js",
     "runtime-main.js.map": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js.map",
     "static/js/2.2bcce586.chunk.js": "/remotely-jobs/static/js/2.2bcce586.chunk.js",
     "static/js/2.2bcce586.chunk.js.map": "/remotely-jobs/static/js/2.2bcce586.chunk.js.map",
     "index.html": "/remotely-jobs/index.html",
-    "precache-manifest.341fa313f7e50b88160201a81a611fb9.js": "/remotely-jobs/precache-manifest.341fa313f7e50b88160201a81a611fb9.js",
+    "precache-manifest.2277c4e8860d8ea85dcf84457e639fcd.js": "/remotely-jobs/precache-manifest.2277c4e8860d8ea85dcf84457e639fcd.js",
     "service-worker.js": "/remotely-jobs/service-worker.js",
     "static/css/main.18054f87.chunk.css.map": "/remotely-jobs/static/css/main.18054f87.chunk.css.map",
     "static/js/2.2bcce586.chunk.js.LICENSE.txt": "/remotely-jobs/static/js/2.2bcce586.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.bbaac2b6.js",
     "static/js/2.2bcce586.chunk.js",
     "static/css/main.18054f87.chunk.css",
-    "static/js/main.dc631861.chunk.js"
+    "static/js/main.a969a168.chunk.js"
   ]
 }
