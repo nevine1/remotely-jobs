@@ -111,3 +111,10 @@ code {
   appearance: none;
   background: rgb(202, 202, 202);
 }
+
+@media screen and (min-width: 1500px) {
+  .App {
+    width: 1500px;
+    margin: auto;
+  }
+}
