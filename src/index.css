@@ -13,9 +13,30 @@ code {
 }
 
 
+@media screen and (min-width: 300px) {
+  .signup-form {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .signup-form {
+    width: 320px;
+  }
+}
+
 @media screen and (min-width: 640px) {
+
+  .active {
+    border-bottom: 2px solid #319795;
+  }
+
   .form-two {
     margin-left: 10px;
+  }
+
+  .signup-form {
+    width: 400px;
   }
 }
 

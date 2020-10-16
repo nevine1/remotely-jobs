@@ -53,13 +53,13 @@ const Form = (props) => {
             <div className="mx-5 sm:mx-12 md:space-x-3 md:flex">
                 <div className="w-full sm:w-auto block sm:inline-block p-2 border border-gray-500 mt-2 form-one" style={{borderRadius: '7px'}}>
                     <FaSearch className="float-left text-gray-600 mt-1 mr-2"/>
-                    <input type="text" placeholder="job title" className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
+                    <input type="text" placeholder="job title" className="formInput border-none focus:outline-none w-9/12" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
                         setSearch(`?search=${e.target.value.toLowerCase()}`)
                     }}/>
                 </div>
                 <div className="w-full sm:w-auto block sm:inline-block p-2 border border-gray-500 mt-2 sm:ml-2" style={{borderRadius: '7px'}}>
                     <FaBriefcase className="float-left text-gray-600 mt-1 mr-2"/>
-                    <input type="text" placeholder="Company name"  className="formInput border-none focus:outline-none" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
+                    <input type="text" placeholder="Company name"  className="formInput border-none focus:outline-none w-9/12" onFocus={formShadwo} onBlur={hideFormShadow} onInput={(e) => {
                         setCompany(`?company_name=${e.target.value.toLowerCase()}`)
                     }}/>
                 </div>

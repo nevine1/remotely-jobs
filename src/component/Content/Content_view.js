@@ -1,8 +1,11 @@
-import React, { useEffect , useState } from 'react';
+import React, { useEffect , useState, useRef } from 'react';
 import { connect } from 'react-redux';
 import { show_details } from '../Action'
 
 const Content_view = (props) => {
+
+  // Content view container element
+  const contentViewRef = useRef()
 
   const [jobURL,setJobUrl] = useState(props.state.jobUrl)
   // Emptying the argument
@@ -12,8 +15,7 @@ const Content_view = (props) => {
 
     useEffect(() => {
       // Put job details inside this element
-        document.querySelector('.job-details-container')
-        .innerHTML = props.state.jobDetails;
+      contentViewRef.current.innerHTML = props.state.jobDetails;
         // replace the job url
         setJobUrl(props.state.jobUrl)
         
@@ -25,12 +27,12 @@ const Content_view = (props) => {
               <div className="relative h-full md:w-auto mt-1 md:mx-auto md:max-w-sm">
                 <div className="border-0 md:rounded-lg md:shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none md:border-2 md:border-gray-400 md:rounded h-full w-full md:w-auto md:h-auto">
                   <div className="px-6 border-b border-solid border-gray-300 rounded-t">
-                    <div className="flex items-start justify-between">
+                    <div className="flex items-start justify-between py-3">
                       <h3 className="text-xl font-semibold">
                         Job Details
                       </h3>
                       <button
-                        className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none block md:hidden"
+                        className="py-3 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none block md:hidden"
                         onClick={closeWindow}
                         >
                         <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
@@ -40,7 +42,7 @@ const Content_view = (props) => {
                     </div>
                   </div>
                   <div className="relative p-6 flex-auto">
-                    <p className="my-4 text-gray-600 text-lg leading-relaxed job-details-container">
+                    <p className="my-4 text-gray-600 text-lg leading-relaxed" ref={contentViewRef}>
                     </p>
                   </div>
                   <div className="flex items-center justify-end p-6 border-t border-solid border-gray-300 rounded-b">
