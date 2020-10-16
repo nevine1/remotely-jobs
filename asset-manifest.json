@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/remotely-jobs/static/css/main.18054f87.chunk.css",
-    "main.js": "/remotely-jobs/static/js/main.d33d7929.chunk.js",
-    "main.js.map": "/remotely-jobs/static/js/main.d33d7929.chunk.js.map",
+    "main.css": "/remotely-jobs/static/css/main.2f4c16ef.chunk.css",
+    "main.js": "/remotely-jobs/static/js/main.84751b0a.chunk.js",
+    "main.js.map": "/remotely-jobs/static/js/main.84751b0a.chunk.js.map",
     "runtime-main.js": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js",
     "runtime-main.js.map": "/remotely-jobs/static/js/runtime-main.bbaac2b6.js.map",
-    "static/js/2.2bcce586.chunk.js": "/remotely-jobs/static/js/2.2bcce586.chunk.js",
-    "static/js/2.2bcce586.chunk.js.map": "/remotely-jobs/static/js/2.2bcce586.chunk.js.map",
+    "static/js/2.f966510f.chunk.js": "/remotely-jobs/static/js/2.f966510f.chunk.js",
+    "static/js/2.f966510f.chunk.js.map": "/remotely-jobs/static/js/2.f966510f.chunk.js.map",
     "index.html": "/remotely-jobs/index.html",
-    "precache-manifest.f8b615bc7ea628d5e925dbf3082cc1fa.js": "/remotely-jobs/precache-manifest.f8b615bc7ea628d5e925dbf3082cc1fa.js",
+    "precache-manifest.b9b3303dfe0bde0b467a4843d6882948.js": "/remotely-jobs/precache-manifest.b9b3303dfe0bde0b467a4843d6882948.js",
     "service-worker.js": "/remotely-jobs/service-worker.js",
-    "static/css/main.18054f87.chunk.css.map": "/remotely-jobs/static/css/main.18054f87.chunk.css.map",
-    "static/js/2.2bcce586.chunk.js.LICENSE.txt": "/remotely-jobs/static/js/2.2bcce586.chunk.js.LICENSE.txt"
+    "static/css/main.2f4c16ef.chunk.css.map": "/remotely-jobs/static/css/main.2f4c16ef.chunk.css.map",
+    "static/js/2.f966510f.chunk.js.LICENSE.txt": "/remotely-jobs/static/js/2.f966510f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.bbaac2b6.js",
-    "static/js/2.2bcce586.chunk.js",
-    "static/css/main.18054f87.chunk.css",
-    "static/js/main.d33d7929.chunk.js"
+    "static/js/2.f966510f.chunk.js",
+    "static/css/main.2f4c16ef.chunk.css",
+    "static/js/main.84751b0a.chunk.js"
   ]
 }
